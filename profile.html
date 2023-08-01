@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile page--Facebook__Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ce926b32c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><img src="images/notification.png" alt="" /></li>
+          <li><img src="images/inbox.png" alt="" /></li>
+          <li><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="Search Img" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="images/profile1.png" alt="User Img" />
+        </div>
+      </div>
+      <!------- user-dropdown menu settings------>
+      <div class="settings-menu">
+        <div id="dark-btn">
+            <span>
+
+            </span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="User Img" />
+            <div>
+              <p>Rohan Sadhu</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="User Img" />
+            <div>
+              <p>Give feedback</p>
+              <a href="#">Help us to improve</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="setting-links">
+            <img src="images/setting.png" alt="Setting Img" class="settings-icon"/>
+            <a href="#">Settings & Privacy <img src="images/arrow.png" alt="Arrow Img" width="10px"></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/help.png" alt="Help Img" class="settings-icon"/>
+            <a href="#">Help & Support <img src="images/arrow.png" alt="Arrow Img" width="10px"></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/display.png" alt="Display Img" class="settings-icon"/>
+            <a href="#">Display & Accessibility <img src="images/arrow.png" alt="Arrow Img" width="10px"></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/logout.png" alt="Logout Img" class="settings-icon"/>
+            <a href="#">Logout <img src="images/arrow.png" alt="Arrow Img" width="10px"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!------- Profile Page Content----------->
+
+    <div class="profile-container">
+        <img src="images/cover.png" class="cover-img" alt="Cover img">
+        <div class="profile-details">
+            
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile1.png" class="pd-img" alt="Profile img">
+                    <div>
+                        <h3>Rohan Sadhu</h3>
+                        <p>120 Friends - 20 mutual friends</p>
+                        <img src="images/member-1.png" alt="Friends">
+                        <img src="images/member-2.png" alt="Friends">
+                        <img src="images/member-3.png" alt="Friends">
+                        <img src="images/member-4.png" alt="Friends">
+                        <img src="images/member-5.png" alt="Friends">
+                        <img src="images/member-6.png" alt="Friends">
+                        <img src="images/member-7.png" alt="Friends">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="images/add-friends.png" alt="Btn Img"> Friend</button>
+                <button type="button"><img src="images/message.png" alt="Btn Img"> Message</button><br>
+                <a href="#"><img src="images/more.png" alt="Img"></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col"></div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile1.png" alt="User Img" />
+                        <div>
+                        <p>Rohan Sadhu</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's is on your mind.."></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/live-video.png" alt="Video" />Live video</a>
+                            <a href="#"><img src="images/photo.png" alt="Photo" />Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png" alt="Feelings"/>Activity/Feeling</a>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2023 -- Rohan Sadhu</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
